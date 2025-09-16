@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    x = int(input())
+    y = input()
+    arr=[0 for i in range(len(y))]
+    for i in range(len(y)):
+        for j in range(len(y)):
+            if y[j]==y[i]:
+                arr[i]=arr[i]+1
+    for i in range(len(y)):
+        if arr[i]==1:
+            print(y[i])
+        
